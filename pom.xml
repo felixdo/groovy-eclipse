@@ -6,7 +6,10 @@
 	<version>2.9.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<!-- To run this build use the following commands (depending on what you 
+
+   
+
+  <!-- To run this build use the following commands (depending on what you 
 		are trying to do) -->
 	<!-- mvn clean install -Pe43j8 -->
 	<!-- mvn clean deploy -Pe43j8 -->
@@ -25,8 +28,10 @@
 	    -->
 
 	<properties>
-		<tycho-version>0.19.0</tycho-version>
-		<tycho-extras-version>0.19.0</tycho-extras-version>
+		<tycho-version>0.25.0</tycho-version>
+		<tycho-extras-version>0.25.0</tycho-extras-version>
+		<tycho.version>${tycho-version}</tycho.version>
+		<tycho-extras.version>${tycho-extras-version}</tycho-extras.version>
 
 		<!-- Version of greclipse maven compiler to use for building. (Some bundles, 
 			mostly test related, have groovy code that can't be compiled with standard 
@@ -67,8 +72,8 @@
 
 		<module>ide-test/org.codehaus.groovy.alltests</module>
 <!-- TODO:  <module>ide-test/org.codehaus.groovy22.tests</module> -->
-		<module>ide-test/org.codehaus.groovy21.tests</module>
-		<module>ide-test/org.codehaus.groovy20.tests</module>
+<!--		<module>ide-test/org.codehaus.groovy21.tests</module> -->
+<!--		<module>ide-test/org.codehaus.groovy20.tests</module> -->
 
 	    <module>ide-test/org.codehaus.groovy.eclipse.codeassist.completion.test</module>
 		<module>ide-test/org.codehaus.groovy.eclipse.codebrowsing.test</module>
@@ -90,19 +95,19 @@
 
 		<module>ide/Feature-org.codehaus.groovy.compilerless.feature</module>
 		<module>ide/Feature-org.codehaus.groovy.eclipse.feature</module>
-		<module>ide/Feature-org.codehaus.groovy18.feature</module>
+		<!--<module>ide/Feature-org.codehaus.groovy18.feature</module>
 		<module>ide/Feature-org.codehaus.groovy20.feature</module>
 		<module>ide/Feature-org.codehaus.groovy21.feature</module>
-		<module>ide/Feature-org.codehaus.groovy22.feature</module>
+		<module>ide/Feature-org.codehaus.groovy22.feature</module> -->
 		<module>ide/Feature-org.codehaus.groovy23.feature</module>
 		<module>ide/Feature-org.codehaus.groovy24.feature</module>
 		<module>ide/Feature-org.codehaus.groovy.headless.feature</module>
 
 		<module>base/org.eclipse.jdt.groovy.core</module>
-		<module>base/org.codehaus.groovy18</module>
+		<!--<module>base/org.codehaus.groovy18</module>
 		<module>base/org.codehaus.groovy20</module>
 		<module>base/org.codehaus.groovy21</module>
-		<module>base/org.codehaus.groovy22</module>
+		<module>base/org.codehaus.groovy22</module>-->
  		<module>base/org.codehaus.groovy23</module>
  		<module>base/org.codehaus.groovy24</module>
 		<module>base/org.codehaus.groovy.eclipse.compilerResolver</module>
@@ -160,6 +165,29 @@
 	       <properties>
 	  	 <dist.target>e4.6</dist.target>
 	 	 <greclipse.build.qualifier>'xx-'yyyyMMddHHmm'-e46${dist.qualifier}'</greclipse.build.qualifier>
+	       </properties>
+	  </profile>
+	  <profile>
+	    <id>e47</id>
+	    <repositories>
+	       <repository>
+	  	 <id>e47</id>
+		 <layout>p2</layout>
+                 <url>http://download.eclipse.org/eclipse/updates/4.7-N-builds</url>
+	       </repository>
+	         <repository>
+		   <id>m2e</id>
+		   <layout>p2</layout>
+		   <url>http://download.eclipse.org/technology/m2e/milestones/1.5</url>
+		 </repository>
+               </repositories>
+	       <modules>
+		 <module>jdt-patch/eclipse.jdt.core/org.eclipse.jdt.core</module>
+	   	 <module>jdt-patch/Feature-org.codehaus.groovy.jdt.patch</module>
+	       </modules>
+	       <properties>
+	  	 <dist.target>e4.7</dist.target>
+	 	 <greclipse.build.qualifier>'xx-'yyyyMMddHHmm'-e47${dist.qualifier}'</greclipse.build.qualifier>
 	       </properties>
 	     </profile>
 
