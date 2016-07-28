@@ -69,23 +69,6 @@
 						<include>**/alltests/AllGroovyAndJDTTests.java</include>
 					</includes>
 	
-					<dependencies>
-						<dependency>
-							<type>eclipse-feature</type>
-							<artifactId>org.codehaus.groovy.eclipse.feature</artifactId>
-							<version>0.0.0</version>
-						</dependency>
-						<dependency>
-							<type>eclipse-feature</type>
-							<artifactId>org.codehaus.groovy24.feature</artifactId>
-							<version>0.0.0</version>
-						</dependency>
-						<dependency>
-							<type>eclipse-feature</type>
-							<artifactId>org.eclipse.rcp</artifactId>
-							<version>0.0.0</version>
-						</dependency>
-					</dependencies>
 	
 				</configuration>
 			</plugin>

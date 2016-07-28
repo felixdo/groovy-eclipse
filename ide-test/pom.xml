@@ -19,6 +19,26 @@
 
 	<build>
 		<plugins>
+
+			<plugin>
+			<groupId>org.eclipse.tycho</groupId>
+			<artifactId>target-platform-configuration</artifactId>
+			<configuration>
+			<dependency-resolution>
+				<extraRequirements>
+
+					<!-- no clue why, but without this no workbench shows up when tests are running
+						 and logs of "event admin service not available" errors pop -->
+					<requirement>
+						<type>eclipse-plugin</type>
+						<id>org.eclipse.equinox.event</id>
+						<versionRange>0.0.0</versionRange>
+					</requirement>
+				</extraRequirements>
+			</dependency-resolution>
+			</configuration>
+			</plugin>
+
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>tycho-compiler-plugin</artifactId>
