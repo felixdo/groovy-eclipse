@@ -28,6 +28,7 @@
 	    -->
 
 	<properties>
+		<!-- build with the same tycho version as jdt -->
 		<tycho-version>0.25.0</tycho-version>
 		<tycho-extras-version>0.25.0</tycho-extras-version>
 		<tycho.version>${tycho-version}</tycho.version>
@@ -142,7 +143,7 @@
 	  	 <id>e46</id>
 		 <layout>p2</layout>
 		 <!-- TODO: after neon release change this: -->
-                 <url>http://download.eclipse.org/eclipse/updates/4.6milestones</url>
+                 <url>http://download.eclipse.org/eclipse/updates/4.6</url>
 <!--
                  <url>http://download.eclipse.org/eclipse/updates/4.6milestones</url> 
                  <url>http://download.eclipse.org/eclipse/updates/4.6</url> 
@@ -159,8 +160,8 @@
 		 </repository>
                </repositories>
 	       <modules>
-	   	 <module>jdt-patch/e46/Feature-org.codehaus.groovy.jdt.patch</module>
-		 <module>jdt-patch/e46/org.eclipse.jdt.core</module>
+		 <module>jdt-patch/Feature-org.codehaus.groovy.jdt.patch</module>
+		 <module>jdt-patch/eclipse.jdt.core</module>
 	       </modules>
 	       <properties>
 	  	 <dist.target>e4.6</dist.target>
