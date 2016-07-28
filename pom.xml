@@ -72,8 +72,8 @@
 
 		<module>ide-test/org.codehaus.groovy.alltests</module>
 <!-- TODO:  <module>ide-test/org.codehaus.groovy22.tests</module> -->
-<!--		<module>ide-test/org.codehaus.groovy21.tests</module> -->
-<!--		<module>ide-test/org.codehaus.groovy20.tests</module> -->
+		<module>ide-test/org.codehaus.groovy21.tests</module>
+		<module>ide-test/org.codehaus.groovy20.tests</module>
 
 	    <module>ide-test/org.codehaus.groovy.eclipse.codeassist.completion.test</module>
 		<module>ide-test/org.codehaus.groovy.eclipse.codebrowsing.test</module>
@@ -95,19 +95,19 @@
 
 		<module>ide/Feature-org.codehaus.groovy.compilerless.feature</module>
 		<module>ide/Feature-org.codehaus.groovy.eclipse.feature</module>
-		<!--<module>ide/Feature-org.codehaus.groovy18.feature</module>
+		<module>ide/Feature-org.codehaus.groovy18.feature</module>
 		<module>ide/Feature-org.codehaus.groovy20.feature</module>
 		<module>ide/Feature-org.codehaus.groovy21.feature</module>
-		<module>ide/Feature-org.codehaus.groovy22.feature</module> -->
+		<module>ide/Feature-org.codehaus.groovy22.feature</module>
 		<module>ide/Feature-org.codehaus.groovy23.feature</module>
 		<module>ide/Feature-org.codehaus.groovy24.feature</module>
 		<module>ide/Feature-org.codehaus.groovy.headless.feature</module>
 
 		<module>base/org.eclipse.jdt.groovy.core</module>
-		<!--<module>base/org.codehaus.groovy18</module>
+		<module>base/org.codehaus.groovy18</module>
 		<module>base/org.codehaus.groovy20</module>
 		<module>base/org.codehaus.groovy21</module>
-		<module>base/org.codehaus.groovy22</module>-->
+		<module>base/org.codehaus.groovy22</module>
  		<module>base/org.codehaus.groovy23</module>
  		<module>base/org.codehaus.groovy24</module>
 		<module>base/org.codehaus.groovy.eclipse.compilerResolver</module>
