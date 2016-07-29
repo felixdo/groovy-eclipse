@@ -142,17 +142,8 @@
 	       <repository>
 	  	 <id>e46</id>
 		 <layout>p2</layout>
-		 <!-- TODO: after neon release change this: -->
                  <url>http://download.eclipse.org/eclipse/updates/4.6</url>
-<!--
-                 <url>http://download.eclipse.org/eclipse/updates/4.6milestones</url> 
-                 <url>http://download.eclipse.org/eclipse/updates/4.6</url> 
--->
 	       </repository>
-	  <!-- <repository> <id>kepler</id> <layout>p2</layout> <url>http://download.eclipse.org/releases/luna</url> 
-					</repository> -->
-				<!-- luna simul release update site doesn't exist yet. Add individual 
-					sites. When 4.4 is released. Replace with luna site -->
 	         <repository>
 		   <id>m2e</id>
 		   <layout>p2</layout>
