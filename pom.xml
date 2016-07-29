@@ -142,7 +142,7 @@
 	       <repository>
 	  	 <id>e46</id>
 		 <layout>p2</layout>
-                 <url>http://download.eclipse.org/eclipse/updates/4.6</url>
+                 <url>http://download.eclipse.org/eclipse/updates/4.6-M-builds</url>
 	       </repository>
 	         <repository>
 		   <id>m2e</id>
